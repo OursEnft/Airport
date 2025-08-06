@@ -1,0 +1,128 @@
+:root{
+    --main-blue: #002395;
+
+}
+
+@font-face {
+    font-family: 'Glacial';
+    src: url('../font/GlacialIndifference-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Glacial'
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.liens-footer {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-right: 20px;
+}
+
+.liens-footer:hover {
+    color: #ffcc00; /* a changer car pu sa mere */
+}
+
+.img-footer-logo{
+    max-height: 80px;
+}
+
+.titre{   /* a mettre sur tous les titres des pages*/
+    font-weight: bold;
+    color: var(--main-blue);
+}
+
+/* HEADER*/
+
+#logo{
+    width: 20%;
+    height: auto;
+}
+/* PAGE DE CONNEXION */
+
+#containerconnexion .btn-primary {
+    background-color: var(--main-blue) !important;
+    border-color: var(--main-blue);
+}
+
+
+/* PAGE COMPAGNIES*/
+
+#containercompagnie {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc; /* Ajout d'une bordure pour le cadre */
+    border-radius: 20px;
+    padding: 10px;
+    max-height: 500px; /* Hauteur maximale du conteneur */
+    overflow-y: scroll; /* Activation du défilement vertical */
+    background-color: #f8f9fa; /* à changer (trop sombre) */
+}
+
+#containercompagnie::-webkit-scrollbar {
+    display: none; /* Cacher la scrollbar */
+}
+
+.airline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.airline img {
+    max-width: 80px;
+    max-height: 40px;
+}
+.details {
+    flex: 1;
+    margin-left: 20px;
+}
+.details h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.details p {
+    margin: 5px 0;
+}
+.details a {
+    text-decoration: none;
+    color:var(--main-blue);
+}
+.details a:hover {
+    text-decoration: underline;
+}
+
+#titrecompagnies{
+    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#containercompagnie .search-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+#containercompagnie .search-container input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+

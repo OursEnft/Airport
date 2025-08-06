@@ -1,0 +1,1334 @@
+:root {
+    --main-blue: #002395;
+    --secondary-blue: #0056b3;
+    --highlight-yellow: #ffcc00;
+    --light-gray: #f8f9fa;
+    --dark-gray: #ccc;
+    --text-dark: #333;
+}
+
+h3,p {
+    color: var(--main-blue);
+}
+
+
+@font-face {
+    font-family: 'Glacial';
+    src: url('../../resources/font/GlacialIndifference-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Organisation verticale des éléments */
+    justify-content: space-between; /* Pousse le footer en bas */
+    font-family: 'Glacial';
+}
+
+main {
+    flex: 1;
+}
+
+.liens-footer {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-right: 20px;
+}
+
+.liens-footer:hover {
+    color: #ffcc00;
+}
+
+#suiveznous{
+    color: white;
+}
+
+.img-footer-logo {
+    max-height: 80px;
+}
+
+/* Style des titres */
+.titre {
+    font-weight: bold;
+    color: var(--main-blue);
+}
+
+/* Styles pour le footer */
+footer {
+    background-color: #0038A8;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: relative;
+}
+
+.container2{
+    position: relative;
+    padding: 10px;
+}
+
+/* Styles pour les liens dans le footer */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#containerconnexion .btn-primary {
+    background-color: var(--main-blue) !important;
+    border-color: var(--main-blue);
+}
+
+/*------------------
+HEADER
+-------------------*/
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+#pass {
+    width: 37px;
+    height: 37px;
+}
+
+#user {
+    width: 62px;
+    height: 37px;
+}
+
+#panier {
+    width: 32px;
+    height: 32px;
+}
+
+#drapeau {
+    width: 34px;
+    height: 24px;
+}
+
+.container{
+    position: relative;
+    padding: 20px;
+}
+
+/* Barre verticale */
+.separator {
+    width: 1px;
+    height: 24px;
+    background-color: #000000;
+    display: inline-block;
+}
+
+
+/* Style par défaut du conteneur */
+.position-relative {
+    position: relative;
+}
+
+/* Menu déroulant masqué par défaut */
+
+.d-flex span.ms-2 {
+    margin-right: 15px;
+}
+
+    .dropdown-menu-lang {
+    display: none;
+    position: absolute;
+    top: 100%; /* Positionné sous l'image et le texte */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0;
+    list-style: none;
+    z-index: 1000;
+    width: 80px;
+    text-align: center;
+}
+
+/* Items du menu */
+.dropdown-menu-lang li {
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Effet hover */
+.dropdown-menu-lang li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Afficher le menu au survol */
+.position-relative:hover .dropdown-menu-lang {
+    display: block;
+}
+
+
+/* Ligne de séparation */
+.divider {
+    border: 0;
+    border-top: 1px solid #000000;
+    width: 50%;
+    margin: 0 0;
+    right: 28px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Menu secondaire aligné à droite */
+.menu-secondaire {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-secondaire .nav-item {
+    margin-left: 0; /* Supprime les marges excessives */
+    white-space: nowrap;
+}
+.menu-secondaire ul.nav {
+    margin: 0;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: nowrap; /* Évite que les éléments passent sur une nouvelle ligne */
+    gap: 4px;
+}
+.menu-secondaire .nav-link {
+    padding: 0.5rem 1rem;
+}
+
+.nav-pills .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-pills .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    position: absolute;
+    z-index: 1000;
+    background-color: var(--main-blue);
+    border: 1px solid var(--main-blue);
+    border-radius: 5px;
+    padding: 0;
+}
+
+.nav-pills .dropdown-menu .dropdown-item {
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-pills .dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: var(--main-blue);
+}
+
+.nav-pills a {
+    color: var(--main-blue);
+}
+
+/*-----------------
+ACCUEIL
+------------------*/
+
+.position-relative{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.nav-tabs .nav-link {
+    font-weight: bold;
+    color: var(--main-blue);
+    border: none;
+}
+.nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: var(--main-blue);
+    border-radius: 5px;
+}
+.card {
+    border-radius: 10px;
+}
+.input-group-text {
+    background-color: #f8f9fa;
+}
+.btn-primary {
+    background-color: var(--main-blue);
+    border-color: var(--main-blue);
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Optionnel : ajuster la hauteur de l'image */
+#aeroport_accueil {
+    width: 100%;
+    max-height: 500px;
+    opacity: 0.5;
+}
+
+.card {
+    opacity: 0.95; /* Légère transparence pour le contenu */
+}
+
+.modern-input {
+    border: 2px solid var(--main-blue);
+    color: var(--main-blue);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.modern-input:focus {
+    outline: none;
+    box-shadow: 0 0 8px var(--main-blue);
+}
+
+.swap-btn {
+    background: var(--main-blue);
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: transform 0.4s ease, background 0.3s;
+}
+
+.swap-btn:hover {
+    background: #0056b3;
+}
+
+.swap-btn:active {
+    transform: rotate(360deg);
+    transition: ease-in-out;
+}
+
+.results {
+    position: absolute;
+    z-index: 10;
+    background: white;
+    border: 1px solid var(--main-blue);
+    max-height: 150px;
+    overflow-y: auto;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    display: none;
+}
+
+.result-item {
+    padding: 0.5rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--main-blue);
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-item:hover {
+    background: var(--main-blue);
+    color: #fff;
+}
+
+/* Conteneur de témoignages */
+.custom-testimonials {
+    padding: 20px;
+}
+
+.custom-testimonials-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--main-blue); /* Bleu sombre */
+    margin-bottom: 20px;
+}
+
+.custom-testimonials-container {
+    margin-top: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-testimonial {
+    background-color: #ffffff; /* Blanc */
+    border: 1px solid #e3e3e3; /* Bordure légère */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.custom-testimonial p {
+    font-size: 16px;
+    color: #333; /* Texte sombre */
+}
+
+.custom-testimonial small {
+    display: block;
+    margin-top: 10px;
+    color: #666; /* Texte plus clair */
+    font-style: italic;
+}
+
+.custom-flight-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--main-blue); /* Rouge subtil */
+    margin-bottom: 20px;
+}
+
+.custom-table {
+    font-size: 14px;
+}
+
+.custom-table-head th {
+    background-color: #343a40; /* Noir Bootstrap */
+    color: #fff; /* Texte blanc */
+}
+
+.custom-table td,
+.custom-table th {
+    text-align: center; /* Centrer le contenu */
+    vertical-align: middle; /* Alignement vertical */
+}
+
+.custom-table tbody tr:hover {
+    background-color: #f1f1f1; /* Survol des lignes */
+}
+
+.rotation{
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+.custom-shadow {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.image-container {
+    position: relative;
+    align-content: center;
+    width: 500px; /* Ajuste la taille selon tes besoins */
+    height: 350px; /* Ajuste la taille selon tes besoins */
+}
+
+.front-image,
+.back-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Cache l'image arrière pendant la rotation */
+    transition: transform 0.6s ease-in-out; /* Animation de la rotation */
+}
+
+.back-image {
+    transform: rotateY(180deg); /* L'image arrière est initialement tournée à 180 degrés */
+}
+
+.image-container:hover .front-image {
+    transform: rotateY(180deg); /* Lorsque la souris est au-dessus, on fait tourner l'image de face */
+}
+
+.image-container:hover .back-image {
+    transform: rotateY(0deg); /* L'image arrière revient à la position normale */
+}
+
+.btn-decouvrir {
+    padding: 12px 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--main-blue); /* Couleur du bouton */
+    color: white;
+    border-radius: 50px; /* Arrondi du bouton */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre du bouton */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-decouvrir:hover {
+    background-color: #0056b3; /* Couleur du bouton au survol */
+    transform: translateY(-3px); /* Effet de survol (légère élévation) */
+}
+
+.btn-decouvrir:active {
+    transform: translateY(1px); /* Effet lors du clic (légère pression) */
+}
+
+/*Carroussel & Services*/
+.carousel-item {
+    height: 500px; /* Hauteur uniforme pour le carrousel */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* Nécessaire pour positionner le caption par rapport à cet élément */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
+
+.carousel-caption h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Description */
+.carousel-caption p {
+    font-size: 1rem;
+    color: #f8f9fa;
+}
+
+/* Date */
+.carousel-caption small {
+    font-size: 0.85rem;
+    color: #ddd;
+}
+
+/* Contrôles du carrousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+}
+/* Section Services */
+.services {
+    text-align: center; /* Centrer le titre et les éléments */
+    margin: 50px auto; /* Marges pour espacer la section */
+    max-width: 1200px; /* Limite la largeur de la section */
+    padding: 80px;
+}
+
+.services h2 {
+    font-size: 2.5rem; /* Taille du titre */
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000000; /* Couleur moderne (bleu) */
+    text-transform: uppercase; /* Met en majuscules pour accentuer */
+    letter-spacing: 2px; /* Espacement des lettres pour l'élégance */
+    position: relative; /* Aligner indépendamment des icônes */
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Une colonne par défaut */
+    gap: 20px; /* Espacement entre les services */
+    margin-top: 20px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre le contenu dans chaque élément */
+    background-color: #fff; /* Fond blanc pour démarquer chaque service */
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Léger déplacement au survol */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Augmente l'ombre au survol */
+}
+
+.service-item img {
+    width: 100px; /* Taille uniforme pour les icônes */
+    height: 100px; /* Taille uniforme pour les icônes */
+    object-fit: contain; /* Empêche la déformation */
+    margin-bottom: 15px;
+}
+
+.service-item h4 {
+    font-size: 1.5rem;
+    color: #333; /* Couleur sobre */
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #555; /* Texte plus clair */
+    line-height: 1.6; /* Espacement entre les lignes pour la lisibilité */
+    margin: 0;
+}
+
+/* Mise en page responsive */
+@media (min-width: 768px) {
+    .service-list {
+        grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur tablettes */
+    }
+}
+
+@media (min-width: 992px) {
+    .service-list {
+        grid-template-columns: repeat(4, 1fr); /* Quatre colonnes sur écrans larges */
+    }
+}
+
+
+/*--------------------
+PAGE DE CONNEXION
+---------------------*/
+
+#containerconnexion .btn-primary {
+    background-color: var(--main-blue) !important;
+    border-color: var(--main-blue);
+}
+
+#containerconnexion .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+#containerconnexion h2{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#containerconnexion h3{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#containerconnexion p{
+    color: #000000;
+}
+
+#carteconnexion{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*--------------------
+PAGE D'INSCRIPTION
+---------------------*/
+
+#inscription .card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+
+}
+#subscribe_box{
+    margin-bottom: 20px;
+}
+
+#inscription .card h3 {
+    font-weight: 600;
+    color: #343a40;
+}
+
+#inscription .form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+#inscription .form-control:focus {
+    border-color: var(--main-blue);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#inscription .btn-primary {
+    background-color: var(--main-blue);
+    border-color: var(--main-blue);
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#inscription .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Responsive spacing */
+@media (max-width: 576px) {
+    #inscription .card {
+        padding: 20px;
+    }
+
+    #inscription .form-label {
+        font-size: 0.9rem;
+    }
+}
+
+/*--------------------------
+PAGE COMPAGNIES
+----------------------------*/
+
+#containercompagnie {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    max-height: 500px; /* Hauteur maximale du conteneur */
+    overflow-y: scroll; /* Activation du défilement vertical */
+    background-color: #f8f9fa; /* à changer (trop sombre) */
+}
+
+
+#containercompagnie::-webkit-scrollbar {
+    display: none; /* Cacher la scrollbar */
+}
+
+.airline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.airline img {
+    max-width: 150px;
+    max-height: 75px;
+}
+
+.airline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+}
+
+.airline .section-logo {
+    width: 150px; /* Largeur fixe pour garantir l'alignement */
+    display: flex;
+    align-items: center; /* Centrage vertical des logos */
+    justify-content: center; /* Centrage horizontal des logos */
+    height: 75px; /* Hauteur fixe pour éviter le décalage */
+}
+
+.airline .section-logo img {
+    max-width: 100%; /* Ajustement proportionnel à la largeur disponible */
+    max-height: 100%; /* Ajustement proportionnel à la hauteur disponible */
+    object-fit: contain; /* Évite la déformation des logos */
+}
+
+/* Section infos */
+.airline .section-infos {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.airline .section-infos h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: var(--main-blue);
+}
+
+.airline .section-infos p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+/* Section lien */
+.airline .section-link {
+    text-align: center;
+}
+
+.airline .section-link a {
+    text-decoration: none;
+    color: var(--secondary-blue);
+    font-weight: bold;
+    border: 1px solid var(--secondary-blue);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.airline .section-link a:hover {
+    background-color: var(--secondary-blue);
+    color: white;
+}
+
+#titrecompagnies {
+    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+    color: var(--main-blue);
+}
+
+
+#compagnies #divtitre h5{
+    color: var(--main-blue);
+}
+
+#compagnies #picto{
+    width: 15%;
+    height: auto;
+}
+
+#compagnies #divpicto{
+    text-align: center;
+}
+
+#compagnies{
+    width: 100vw;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+#containercompagnie{
+    margin-bottom: 50px;
+}
+
+#containercompagnie .search-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+#containercompagnie .search-container input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Ajustement des icônes de Connexion et Shopping */
+.nav-pills .divider {
+    border-left: 1px solid #000;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.navbar-nav img {
+    width: 32px; /* Réduction de la taille à 32px */
+    height: 32px; /* Gardez une hauteur proportionnelle */
+    object-fit: contain; /* Assurez-vous que l'image garde ses proportions */
+    margin-right: 10px; /* Espacement entre les icônes et les autres éléments */
+}
+
+/* Ajout de marges spécifiques si nécessaire */
+.navbar-nav .nav-item {
+    margin-right: 15px; /* Espacement entre les boutons */
+}
+
+.result-item {
+    cursor: pointer !important;
+    padding: 5px !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+.result-item:hover {
+    background-color: #f0f0f0 !important;
+}
+
+.results {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid var(--dark-gray);
+    border-radius: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.result-item {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.result-item:hover {
+    background-color: var(--light-gray);
+}
+
+/*-----------------------
+PAGE LOCALISATION
+------------------------*/
+#loca-div {
+    margin: 5%;
+}
+
+@media (max-width: 576px) {
+    #loca-div {
+        margin: 2%;
+    }
+}
+
+#titre-loca {
+    font-weight: bold;
+    color: var(--main-blue) !important;
+    font-size: 2rem;
+}
+
+@media (max-width: 576px) {
+    #titre-loca {
+        font-size: 1.5rem;
+    }
+}
+
+.text-loca {
+    color: var(--main-blue) !important;
+    font-size: 1rem;
+}
+
+#img_loca {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+/*---------------------
+PAGE PARKING VOITURE
+----------------------*/
+
+/*---------------------
+PAGE PARKING VOITURE
+----------------------*/
+
+#titre-voiture {
+    font-weight: bold;
+    color: var(--main-blue) !important;
+    font-size: 2rem;
+}
+
+@media (max-width: 576px) {
+    #titre-voiture {
+        font-size: 1.5rem;
+    }
+}
+
+.text-voiture {
+    color: var(--main-blue) !important;
+    font-size: 1rem;
+}
+
+.text-voiture .adresse {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#td-voiture {
+    vertical-align: middle;
+    text-align: center;
+}
+
+#voiture-img {
+    max-width: 150px;
+    height: auto;
+}
+
+
+.info-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.info-box:hover {
+    transform: scale(1.05); /* Agrandit légèrement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+    background-color: #e6f7ff; /* Change la couleur de fond (ajustable) */
+}
+
+
+.info-box h3 {
+    color: var(--main-blue);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 576px) {
+    .info-box h3 {
+        font-size: 1.25rem;
+    }
+}
+
+.info-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-box ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.image-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-box img {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .image-box img {
+        max-width: 100%;
+    }
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding: 15px;
+    vertical-align: top;
+}
+
+.row {
+    margin: 0;
+}
+
+.col-md-6 {
+    padding: 15px;
+}
+
+.info-box h3 a {
+    text-decoration: none;
+    color: #f0f0f0 !important;
+    background-color: var(--main-blue) !important;
+    padding: 1px 4px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.info-box h3 a:hover {
+    background-color: #f0f0f0 !important;
+    color: var(--main-blue) !important;
+}
+
+/*---------------------
+PAGE PARKING MOTO VELO
+----------------------*/
+#titre-moto {
+    font-weight: bold;
+    color: var(--main-blue) !important;
+    font-size: 2rem;
+}
+
+@media (max-width: 576px) {
+    #titre-moto {
+        font-size: 1.5rem;
+    }
+}
+
+.text-moto {
+    color: var(--main-blue) !important;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+#moto-div {
+    display: inline-block;
+    text-align: left;
+}
+
+#td-moto {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.moto-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moto-images img {
+    max-width: 150px;
+    height: auto;
+    margin: 0 5px;
+}
+
+.moto-images p {
+    margin: 0 10px;
+}
+
+.h3-moto {
+    font-size: 1.5rem;
+}
+
+.moto-img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: center;
+    width: 40px;
+}
+
+.a-moto {
+    text-decoration: none;
+    color: inherit;
+}
+.hover-effect:hover .parking-link img {
+    transition: all 0.3s ease;
+    content: url("{{ asset('media/img/motodetou.png') }}");
+}
+
+.hover-effect .parking-link:nth-child(2):hover img {
+    content: url("{{ asset('media/img/velodetou.png') }}");
+}
+
+
+
+/*------------------------
+PAGE PARKINGS
+-------------------------*/
+
+#parkingtarifs table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#parkingtarifs th,#parkingtarifs td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    color: var(--main-blue);
+}
+#parkingtarifs th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+#parkingspage #infosetresa, #parkingspage #tarifs, #parkingspage #infos{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#resa{
+    margin-top: 50px;
+    width: fit-content;
+    border: 1px solid var(--main-blue);
+    padding: 50px;
+    border-radius: 15px;
+}
+
+#parkingspage h3{
+    text-decoration: underline;
+}
+
+#iparking{
+    margin-bottom: 5rem;
+}
+
+#infos h5{
+    color: var(--main-blue);
+}
+
+
+/*-----------------------------
+PAGE SHOPPING
+-----------------------------*/
+
+
+
+#shopping #divtitreshopping h5{
+    color: var(--main-blue);
+}
+
+#shopping #pictoshopping{
+    width: 15%;
+    height: auto;
+}
+
+#shopping #divpictoshopping{
+    text-align: center;
+}
+
+#shopping{
+    width: 100vw;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+
+#containerenseigne {
+    margin: 20px auto;
+    max-width: 1100px;
+    height: 500px; /* Hauteur fixe pour activer le scroll */
+    overflow-y: auto; /* Ajout du scroll vertical */
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+#containerenseigne::-webkit-scrollbar {
+    display: none; /* Cacher la scrollbar */
+}
+
+#containerenseigne h3{
+    color: var(--main-blue);
+}
+
+/* Zone de recherche */
+.enseignes-search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#enseignes-searchBar {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Mise en page en grille */
+.enseignes-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 3 ou 4 colonnes en fonction de l'espace disponible */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style des cartes des enseignes */
+.enseignes-store {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.enseignes-store-logo img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.enseignes-store-infos h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.enseignes-store-infos a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.enseignes-store-infos a:hover {
+    text-decoration: underline;
+}
+
+
+/* Page assistance style  */
+
+.title-category-assistance{
+    font-weight: bold;
+    color: #002395;
+    margin-bottom: 15px;
+}
+
+.phone-number{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.assistance-category{
+    text-align: center;
+    width: fit-content;
+    margin: 10px auto;
+    border: 2px solid #002395;
+    border-radius: 10px;
+    padding: 20px;
+
+    display: flex;
+
+}
+
+.pictogramme-assitance{
+    width: 75px;
+    height: 75px;
+}
